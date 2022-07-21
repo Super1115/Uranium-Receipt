@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <title>New Receipt</title>
+    <style>
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+        /* font */
+        
+        :root{
+        --bgcolor: #cce2e5;
+        --card-color: rgb(216, 235, 240);
+    }
+        body{
+            background-color: var(--bgcolor);
+    }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .frame{
+            background-color: var(--card-color);
+            box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+            transition: 0.2s;
+            width: 900px;
+            height: 900px;
+            position: absolute;
+            top:40px;
+            left: 500px;
+            border-radius: 75px;
+            /* padding: 20px; */
+        }
+        .submit{
+            font-family: 'Koulen', cursive;
+            position: absolute;
+            top: 85%;
+            left: 33%;
+            width: 350px;
+            height: 75px;
+            border-radius: 30px;
+            border-color: black;
+            border-width: 3px;
+            box-shadow: none;
+            background-color: var(--bgcolor);
+            font-size: 40px;
+            cursor: pointer;
+        }
+    .input_title{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top:22%;
+    }
+    .input_customer_name{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 29.75%;
+    }
+    .input_your_name{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 45%;
+    }
+    .input_email{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+    }
+    .input_type_text{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+    }
+    .font{
+        font-family: 'Source Code Pro', monospace;
+    }
+    .input_date{
+        font-family: 'Source Code Pro', monospace;
+        border-radius: 100px;
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .input_currency{
+        border-radius: 50px;
+        width: 358px;
+        height: 40px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 52.75%;
+        background-color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h1>New Receipt/Bill</h1>
+        <form action=""> 
+            <div class="input_type"><h2>type (Required):</h2><p class="font">Receipt</p><input type="radio" name="type" id="receipt"><p class="font">Bill</p><input type="radio" name="type" id="bill"></div>
+            <input type="text" name="title" id="title" placeholder="Title (Required)" class="input_title" required>
+            <input type="text" name="customer_name" id="customer_name" class="input_customer_name" placeholder="Customer Name (Not Required)">
+            <input type="text" name="your_name" id="your_name" class="input_your_name" placeholder="Your Name (Required)" required>
+            <input type="email" name="email" id="email" placeholder="Your Email (Required)" class="input_email" required>
+            <h2 class="font">Date:</h2><input type="date" name="date" id="date" class="input_date">
+            <select name="currency" id="currency" class="input_currency">
+                <option value="USD" selected="selected"><span>&#36;</span> United States Dollars</option>
+                <option value="EUR"><span>&#8364;</span> Euro</option>
+                <option value="GBP"><span>&#163;</span> United Kingdom Pounds</option>
+                <option value="DZD">دج  Algeria Dinars(دينار جزائري)</option>
+                <option value="ARP"><span>&#36;</span>  Argentina Pesos(Peso argentino)</option>
+                <option value="AUD">A$ Australia Dollars</option>
+                <option value="BSD">B$ Bahamas Dollars</option>
+                <option value="BBD">Bds$ Barbados Dollars</option>
+                <option value="BMD">$ Bermuda Dollars</option>
+                <option value="BRR">R$ Brazil Real(Real brasileiro)</option>
+                <option value="BGL">лв Bulgaria Lev(Български лев)</option>
+                <option value="CAD">C$ Canada Dollars</option>
+                <option value="CLP">$ Chile Pesos(Peso chileno)</option>
+                <option value="CNY"><span>&#20803;</span> China Renminbi(人民币)</option>
+                <option value="CSK">Kč Czech Republic Koruna(koruna česká)</option>
+                <option value="DKK">kr. Denmark Kroner(dansk krone)</option>
+                <option value="XCD">EC$ Eastern Caribbean Dollars</option>
+                <option value="EGP">ج.م Egypt Pounds(جنيه مصرى)</option>
+                <option value="FJD">FJ$ Fiji Dollars</option>
+                <option value="HKD"><span>&#22291;</span> Hong Kong Dollars(港元)</option>
+                <option value="HUF">Ft Hungary Forint(magyar forint)</option>
+                <option value="ISK">kr Iceland Krona(króna)</option>
+                <option value="INR">₹ India Rupees</option>
+                <option value="IDR">Rp Indonesia Rupiah</option>
+                <option value="ILS">₪ Israel New Shekels(שקל חדש)</option>
+                <option value="JMD">$ Jamaica Dollars</option>
+                <option value="JPY"><span>&#165;</span> Japan Yen(日本円)</option>
+                <option value="JOD">د.أ Jordan Dinar(عشرة قروش أردنيه)</option>
+                <option value="KRW">₩ Korea Won(대한민국 원)</option>
+                <option value="LBP">ل.ل Lebanon Pounds(ليرة لبنانية)</option>
+                <option value="MYR">RM Malaysia Ringgit(Ringgit Malaysia)</option>
+                <option value="MXP">Mex$ Mexico Pesos(Peso Mexicano)</option>
+                <option value="NZD">NZ$ New Zealand Dollars</option>
+                <option value="NOK">kr,,- Norway Krone(norsk krone)</option>
+                <option value="PKR">₨ Pakistan Rupees</option>
+                <option value="PHP">₱ Philippines Pesos(Piso ng Pilipinas)</option>
+                <option value="PLN">zł Poland Zloty(Polski złoty)</option>
+                <option value="ROL">L Romania Leu(Leu românesc)</option>
+                <option value="RUR">₽ Russia Rubles(Российский рубль)</option>
+                <option value="SAR">ر.س Saudi Arabia Riyal(ريال سعودي)</option>
+                <option value="SGD">S$ Singapore Dollars</option>
+                <option value="ZAR">R South Africa Rand</option>
+                <option value="SEK">kr Sweden Krona(svensk krona)</option>
+                <option value="CHF">CHF Switzerland Francs(Schweizer Franken)</option>
+                <option value="TWD"><span>&#22291;</span> Taiwan Dollars(新台幣)</option>
+                <option value="UAH">₴ Ukraine Hryvnia(українська гривня)</option>
+                <option value="THB">฿ Thailand Baht(บาทไทย)</option>
+                <option value="TTD">TT$ Trinidad and Tobago Dollars</option>
+                <option value="TRL">₺ Turkey Lira(Türk lirası)</option>
+                <option value="VEB">Bs Venezuela Bolivar(bolívar venezolano)</option>
+                <option value="ZMK">ZK Zambia Kwacha</option>
+            </select>
+            <button type="submit" class="submit">submit</button>
+        </form>
+    </div>
+</body>
