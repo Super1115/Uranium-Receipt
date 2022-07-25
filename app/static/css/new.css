@@ -1,0 +1,528 @@
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+        /* font */
+        
+        :root{
+        --bgcolor: #cce2e5;
+        --card-color: rgb(216, 235, 240);
+    }
+        body{
+            background-color: var(--bgcolor);
+    }
+    /* ---------------------
+min 1920px
+--------------------- */
+    @media(min-width: 1920px){
+        h1{
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .df{
+            display: flex;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .frame{
+            background-color: var(--card-color);
+            box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+            transition: 0.2s;
+            width: 900px;
+            height: 900px;
+            border-radius: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .submit{
+            font-family: 'Koulen', cursive;
+            position: absolute;
+            top: 85%;
+            left: 30%;
+            width: 350px;
+            height: 75px;
+            border-radius: 30px;
+            border-color: black;
+            border-width: 3px;
+            box-shadow: none;
+            background-color: var(--bgcolor);
+            font-size: 40px;
+            cursor: pointer;
+        }
+    .input_title{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top:22%;
+    }
+    .input_customer_name{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 43.75%; 
+    }
+    .input_your_name{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 29.75%;
+    }
+    .input_email{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+    }
+    .input_type_text{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+    }
+    .font{
+        font-family: 'Source Code Pro', monospace;
+    }
+    .input_date{
+        font-family: 'Source Code Pro', monospace;
+        border-radius: 100px;
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .input_currency{
+        border-radius: 50px;
+        width: 358px;
+        height: 40px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 57.25%;
+        background-color: #fff;
+    }
+    .customer_email{
+        border-radius: 50px;
+        width: 350px;
+        height: 35px;
+        font-size: 25px;
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        left: 30%;
+        top: 50.5%;
+    }
+}
+/* ---------------------
+min 1280px max 1920px
+--------------------- */
+@media(min-width: 1280px) and (max-width: 1919px){
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .df{
+        display: flex;
+    }
+    .aic{
+        align-items: center;
+    }
+    .jcc{
+        justify-content: center;
+    }
+    .frame{
+        background-color: var(--card-color);
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        transition: 0.2s;
+        width: 600px;
+        height: 600px;
+        border-radius: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .submit{
+        font-family: 'Koulen', cursive;
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        width: 232px;
+        height: 50px;
+        border-radius: 30px;
+        border-color: black;
+        border-width: 3px;
+        box-shadow: none;
+        background-color: var(--bgcolor);
+        font-size: 26px;
+        cursor: pointer;
+    }
+.input_title{
+    border-radius: 50px;
+    width: 348px;
+    height: 24px;
+    font-size: 25px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top:22%;
+}
+.input_customer_name{
+    border-radius: 50px;
+    width: 348px;
+    height: 24px;
+    font-size: 25px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 43.75%; 
+}
+.input_your_name{
+    border-radius: 50px;
+    width: 348px;
+    height: 24px;
+    font-size: 25px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 29.75%;
+}
+.input_email{
+    border-radius: 50px;
+    width: 348px;
+    height: 24px;
+    font-size: 25px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 37%;
+}
+.input_type_text{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+}
+.font{
+    font-family: 'Source Code Pro', monospace;
+}
+.input_date{
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 100px;
+    width: 134px;
+    height: 24px;
+    font-size: 15px;
+    text-align: center;
+}
+.input_currency{
+    border-radius: 50px;
+    width: 354.5px;
+    height: 34px;
+    font-size: 25px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 57.25%;
+    background-color: #fff;
+}
+.customer_email{
+    border-radius: 50px;
+    width: 348px;
+    height: 24px;
+    font-size: 25px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 50.5%;
+}
+
+}
+/* 
+--------------------
+max 1279px min 640px
+-------------------- */
+@media(min-width: 640px) and (max-width: 1279px){
+    h1{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .df{
+        display: flex;
+    }
+    .aic{
+        align-items: center;
+    }
+    .jcc{
+        justify-content: center;
+    }
+    .frame{
+        background-color: var(--card-color);
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        transition: 0.2s;
+        width: 450px;
+        height: 450px;
+        border-radius: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .submit{
+        font-family: 'Koulen', cursive;
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        width: 174px;
+        height: 50px;
+        border-radius: 30px;
+        border-color: black;
+        border-width: 3px;
+        box-shadow: none;
+        background-color: var(--bgcolor);
+        font-size: 26px;
+        cursor: pointer;
+    }
+.input_title{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top:25%;
+}
+.input_customer_name{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 46.75%; 
+}
+.input_your_name{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 32.75%;
+}
+.input_email{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+.input_type_text{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 7.5px;
+}
+.font{
+    font-family: 'Source Code Pro', monospace;
+}
+.input_date{
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 100px;
+    width: 100px;
+    height: 15px;
+    font-size: 10.75px;
+    text-align: center;
+}
+.input_currency{
+    border-radius: 50px;
+    width: 217px;
+    height: 20px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 60.25%;
+    background-color: #fff;
+}
+.customer_email{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 53.5%;
+}
+
+}
+
+/* max 639px */
+
+@media(max-width: 639px){
+    h1{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .df{
+        display: flex;
+    }
+    .aic{
+        align-items: center;
+    }
+    .jcc{
+        justify-content: center;
+    }
+    .frame{
+        background-color: var(--card-color);
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        transition: 0.2s;
+        width: 75%;
+        height: 90%;
+        border-radius: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .submit{
+        font-family: 'Koulen', cursive;
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        width: 174px;
+        height: 50px;
+        border-radius: 30px;
+        border-color: black;
+        border-width: 3px;
+        box-shadow: none;
+        background-color: var(--bgcolor);
+        font-size: 26px;
+        cursor: pointer;
+    }
+.input_title{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top:25%;
+}
+.input_customer_name{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 46.75%; 
+}
+.input_your_name{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 32.75%;
+}
+.input_email{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+.input_type_text{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 7.5px;
+}
+.font{
+    font-family: 'Source Code Pro', monospace;
+}
+.input_date{
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 100px;
+    width: 100px;
+    height: 15px;
+    font-size: 10.75px;
+    text-align: center;
+}
+.input_currency{
+    border-radius: 50px;
+    width: 217px;
+    height: 20px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 60.25%;
+    background-color: #fff;
+}
+.customer_email{
+    border-radius: 50px;
+    width: 210px;
+    height: 14.3px;
+    font-size: 12.5px;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 53.5%;
+}
+
+}

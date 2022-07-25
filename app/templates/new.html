@@ -1,136 +1,22 @@
 <!DOCTYPE html>
 <head>
     <title>New Receipt</title>
-    <style>
-        /* font */
-        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
-        /* font */
-        
-        :root{
-        --bgcolor: #cce2e5;
-        --card-color: rgb(216, 235, 240);
-    }
-        body{
-            background-color: var(--bgcolor);
-    }
-        h1{
-            text-align: center;
-            font-size: 60px;
-            font-family: 'Source Code Pro', monospace;
-        }
-        .frame{
-            background-color: var(--card-color);
-            box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
-            transition: 0.2s;
-            width: 900px;
-            height: 900px;
-            position: absolute;
-            top:40px;
-            left: 500px;
-            border-radius: 75px;
-            /* padding: 20px; */
-        }
-        .submit{
-            font-family: 'Koulen', cursive;
-            position: absolute;
-            top: 85%;
-            left: 33%;
-            width: 350px;
-            height: 75px;
-            border-radius: 30px;
-            border-color: black;
-            border-width: 3px;
-            box-shadow: none;
-            background-color: var(--bgcolor);
-            font-size: 40px;
-            cursor: pointer;
-        }
-    .input_title{
-        border-radius: 50px;
-        width: 350px;
-        height: 35px;
-        font-size: 25px;
-        border-color: black;
-        font-family: 'Ubuntu', sans-serif;
-        position: absolute;
-        left: 30%;
-        top:22%;
-    }
-    .input_customer_name{
-        border-radius: 50px;
-        width: 350px;
-        height: 35px;
-        font-size: 25px;
-        border-color: black;
-        font-family: 'Ubuntu', sans-serif;
-        position: absolute;
-        left: 30%;
-        top: 29.75%;
-    }
-    .input_your_name{
-        border-radius: 50px;
-        width: 350px;
-        height: 35px;
-        font-size: 25px;
-        border-color: black;
-        font-family: 'Ubuntu', sans-serif;
-        position: absolute;
-        left: 30%;
-        top: 45%;
-    }
-    .input_email{
-        border-radius: 50px;
-        width: 350px;
-        height: 35px;
-        font-size: 25px;
-        border-color: black;
-        font-family: 'Ubuntu', sans-serif;
-        position: absolute;
-        left: 30%;
-    }
-    .input_type_text{
-        font-family: 'Source Code Pro', monospace;
-        font-size: 20px;
-    }
-    .font{
-        font-family: 'Source Code Pro', monospace;
-    }
-    .input_date{
-        font-family: 'Source Code Pro', monospace;
-        border-radius: 100px;
-        width: 200px;
-        height: 35px;
-        font-size: 20px;
-        text-align: center;
-    }
-    .input_currency{
-        border-radius: 50px;
-        width: 358px;
-        height: 40px;
-        font-size: 25px;
-        border-color: black;
-        font-family: 'Ubuntu', sans-serif;
-        position: absolute;
-        left: 30%;
-        top: 52.75%;
-        background-color: #fff;
-    }
-    </style>
+    <link rel="stylesheet" href="static/css/new.css">
 </head>
 <body>
     <div class="frame">
         <h1>New Receipt/Bill</h1>
-        <form action=""> 
+        <form action="/new" method="get"> 
             <div class="input_type"><h2>type (Required):</h2><p class="font">Receipt</p><input type="radio" name="type" id="receipt"><p class="font">Bill</p><input type="radio" name="type" id="bill"></div>
             <input type="text" name="title" id="title" placeholder="Title (Required)" class="input_title" required>
             <input type="text" name="customer_name" id="customer_name" class="input_customer_name" placeholder="Customer Name (Not Required)">
             <input type="text" name="your_name" id="your_name" class="input_your_name" placeholder="Your Name (Required)" required>
             <input type="email" name="email" id="email" placeholder="Your Email (Required)" class="input_email" required>
             <h2 class="font">Date:</h2><input type="date" name="date" id="date" class="input_date">
+            <input type="email" name="customer_email" id="customer_email" placeholder="Customer Email (Not Required)" class="customer_email">
             <select name="currency" id="currency" class="input_currency">
-                <option value="USD" selected="selected"><span>&#36;</span> United States Dollars</option>
+                <option value="currency" selected>Currency</option>
+                <option value="USD"><span>&#36;</span> United States Dollars</option>
                 <option value="EUR"><span>&#8364;</span> Euro</option>
                 <option value="GBP"><span>&#163;</span> United Kingdom Pounds</option>
                 <option value="DZD">دج  Algeria Dinars(دينار جزائري)</option>
