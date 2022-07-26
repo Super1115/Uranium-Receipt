@@ -7,6 +7,7 @@
         :root{
         --bgcolor: #cce2e5;
         --card-color: rgb(216, 235, 240);
+        
     }
         body{
             background-color: var(--bgcolor);
@@ -139,22 +140,13 @@ min 1920px
     }
 }
 /* ---------------------
-min 1280px max 1920px
+min 1280px max 1919px
 --------------------- */
 @media(min-width: 1280px) and (max-width: 1919px){
     h1{
         text-align: center;
         font-size: 40px;
         font-family: 'Source Code Pro', monospace;
-    }
-    .df{
-        display: flex;
-    }
-    .aic{
-        align-items: center;
-    }
-    .jcc{
-        justify-content: center;
     }
     .frame{
         background-color: var(--card-color);
@@ -277,15 +269,6 @@ max 1279px min 640px
         font-size: 25px;
         font-family: 'Source Code Pro', monospace;
     }
-    .df{
-        display: flex;
-    }
-    .aic{
-        align-items: center;
-    }
-    .jcc{
-        justify-content: center;
-    }
     .frame{
         background-color: var(--card-color);
         box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
@@ -405,15 +388,6 @@ max 1279px min 640px
         text-align: center;
         font-size: 25px;
         font-family: 'Source Code Pro', monospace;
-    }
-    .df{
-        display: flex;
-    }
-    .aic{
-        align-items: center;
-    }
-    .jcc{
-        justify-content: center;
     }
     .frame{
         background-color: var(--card-color);
